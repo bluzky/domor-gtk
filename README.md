@@ -1,6 +1,8 @@
 # domor-gtk
 This is a simple pomodoro application which help you to apply pomodoro technique to boost up your productivity.
 
+This application is tested on ubuntu 15.04 and Elementary OS Freya
+
 
 ## 1. Clock window
 
