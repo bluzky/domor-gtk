@@ -1,0 +1,3 @@
+recursive-include domor/img *
+recursive-include domor/sound *
+recursive-include domor/ui *

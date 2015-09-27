@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="xalign">0.43000000715255737</property>
+    <property name="pixbuf">../img/icon-clock.png</property>
+    <property name="icon_size">0</property>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../img/pomo_32.png</property>
+  </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../img/icon-play.png</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../img/setting.png</property>
+  </object>
+  <object class="GtkImage" id="image5">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../img/icon-quit.png</property>
+  </object>
+  <object class="GtkImage" id="image6">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../img/icon-window.png</property>
+  </object>
+  <object class="GtkMenu" id="tray_menu">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <child>
+      <object class="GtkImageMenuItem" id="mni_clock">
+        <property name="label" translatable="yes">25:00</property>
+        <property name="visible">True</property>
+        <property name="sensitive">False</property>
+        <property name="can_focus">False</property>
+        <property name="image">image1</property>
+        <property name="use_stock">False</property>
+        <property name="always_show_image">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkImageMenuItem" id="mni_start">
+        <property name="label" translatable="yes">Start</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="image">image3</property>
+        <property name="use_stock">False</property>
+        <property name="always_show_image">True</property>
+        <signal name="activate" handler="on_mni_start_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="menuitem1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkImageMenuItem" id="mni_archive_count">
+        <property name="label" translatable="yes">0 pomodoro completed</property>
+        <property name="visible">True</property>
+        <property name="sensitive">False</property>
+        <property name="can_focus">False</property>
+        <property name="image">image2</property>
+        <property name="use_stock">False</property>
+        <property name="always_show_image">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="menuitem2">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkImageMenuItem" id="mni_show_window">
+        <property name="label" translatable="yes">Show window</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="image">image6</property>
+        <property name="use_stock">False</property>
+        <property name="always_show_image">True</property>
+        <signal name="activate" handler="mni_show_window_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkImageMenuItem" id="mni_setting">
+        <property name="label" translatable="yes">Setting</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="image">image4</property>
+        <property name="use_stock">False</property>
+        <property name="always_show_image">True</property>
+        <signal name="activate" handler="mni_setting_activate" swapped="no"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkSeparatorMenuItem" id="menuitem3">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkImageMenuItem" id="mni_quit">
+        <property name="label" translatable="yes">Quit</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="image">image5</property>
+        <property name="use_stock">False</property>
+        <property name="always_show_image">True</property>
+        <signal name="activate" handler="on_mni_quit_activate" swapped="no"/>
+      </object>
+    </child>
+  </object>
+</interface>

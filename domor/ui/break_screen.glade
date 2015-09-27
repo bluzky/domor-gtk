@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.18.3 -->
+<interface>
+  <requires lib="gtk+" version="3.12"/>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="pixbuf">../img/skip.png</property>
+  </object>
+  <object class="GtkWindow" id="break_window">
+    <property name="name">fullscreen-window</property>
+    <property name="can_focus">False</property>
+    <signal name="delete-event" handler="on_delete" swapped="no"/>
+    <child>
+      <object class="GtkBox" id="box1">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="halign">center</property>
+        <property name="valign">center</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkBox" id="box2">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkBox" id="box3">
+                <property name="width_request">400</property>
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="orientation">vertical</property>
+                <property name="baseline_position">top</property>
+                <child>
+                  <object class="GtkLabel" id="lb_timer">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <property name="margin_top">27</property>
+                    <property name="label" translatable="yes">25:00</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Meera 64"/>
+                      <attribute name="foreground" value="#3736bcbc9b9b"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="btn_skip">
+                    <property name="width_request">64</property>
+                    <property name="height_request">64</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="halign">center</property>
+                    <property name="valign">start</property>
+                    <property name="margin_bottom">10</property>
+                    <property name="image">image1</property>
+                    <property name="relief">none</property>
+                    <property name="always_show_image">True</property>
+                    <signal name="clicked" handler="on_btn_skip_clicked" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <style>
+          <class name="half-opacity"/>
+        </style>
+      </object>
+    </child>
+  </object>
+</interface>
