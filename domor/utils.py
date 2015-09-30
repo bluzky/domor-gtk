@@ -69,7 +69,7 @@ class Settings(object):
         self.break_mode = self.MODE_BLOCK
         self.allow_skip = True
         self.sound_notification = True
-        self.sound_path = get_sound(PoResources.SOUND_BELL)
+        self.sound_path = get_resource(PoResources.SOUND_BELL)
 
     def to_json(self):
         return json.dumps(self.__dict__)
