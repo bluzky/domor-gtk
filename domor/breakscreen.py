@@ -45,11 +45,13 @@ class BreakScreen(object):
         self.windows.show()
         self.windows.present()
         self.windows.set_keep_above(True)
+        self.windows.stick()
 
     def hide(self):
         self.windows.set_keep_above(False)
         self.windows.unfullscreen()
         self.windows.hide()
+        self.windows.unstick()
 
     def close(self):
         self.windows.close()
